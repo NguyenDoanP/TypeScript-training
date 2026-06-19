@@ -1,0 +1,29 @@
+{
+  "name": "typescript-training",
+  "version": "1.0.0",
+  "description": "my typescript training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NguyenDoanP/TypeScript-training.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NguyenDoanP/TypeScript-training/issues"
+  },
+  "homepage": "https://github.com/NguyenDoanP/TypeScript-training#readme",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^21.0.2",
+    "commitlint": "^21.0.2",
+    "husky": "^9.1.7",
+    "prettier": "^3.8.4"
+  }
+}
