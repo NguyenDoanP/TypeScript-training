@@ -8,8 +8,9 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "build": "tsc",
-    "dev": "ts-node primitive-types.ts",
-    "run": "node primitive-types.js"
+    "dev": "ts-node",
+    "dev:file": "ts-node",
+    "run": "node"
   },
   "repository": {
     "type": "git",
