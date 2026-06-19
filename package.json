@@ -9,6 +9,8 @@
     "format:check": "prettier --check .",
     "build": "tsc",
     "dev": "ts-node primitive-types.ts",
+    "dev:array": "ts-node array.ts",
+    "dev:file": "ts-node",
     "run": "node primitive-types.js"
   },
   "repository": {
