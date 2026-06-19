@@ -1,0 +1,11 @@
+'use strict';
+let userName = 'Alice';
+let age = 25;
+let isStudent = true;
+let bigNumber = 100n;
+let uniqueId = Symbol('id');
+console.log(userName);
+console.log(age);
+console.log(isStudent);
+console.log(bigNumber);
+console.log(uniqueId);
