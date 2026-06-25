@@ -1,7 +1,7 @@
 interface User {
-    id: number;
-    name: string;
-    email?: string;
+  id: number;
+  name: string;
+  email?: string;
 }
 
 // Partial
@@ -9,7 +9,7 @@ interface User {
 type UserUpdate = Partial<User>;
 
 const updateUser: UserUpdate = {
-    name: "John",
+  name: 'John',
 };
 
 // Required
@@ -17,60 +17,60 @@ const updateUser: UserUpdate = {
 type FullUser = Required<User>;
 
 const fullUser: FullUser = {
-    id: 1,
-    name: "John",
-    email: "john@example.com",
+  id: 1,
+  name: 'John',
+  email: 'john@example.com',
 };
 
 // Readonly
 
 const readonlyUser: Readonly<User> = {
-    id: 1,
-    name: "Alice",
+  id: 1,
+  name: 'Alice',
 };
 
 // readonlyUser.name = "Bob"; // Error
 
 // Pick
 
-type UserSummary = Pick<User, "id" | "name">;
+type UserSummary = Pick<User, 'id' | 'name'>;
 
 const summary: UserSummary = {
-    id: 1,
-    name: "Alice",
+  id: 1,
+  name: 'Alice',
 };
 
 // Omit
 
-type UserWithoutEmail = Omit<User, "email">;
+type UserWithoutEmail = Omit<User, 'email'>;
 
 const userNoEmail: UserWithoutEmail = {
-    id: 2,
-    name: "Bob",
+  id: 2,
+  name: 'Bob',
 };
 
 // Record
 
-type Roles = "admin" | "user";
+type Roles = 'admin' | 'user';
 
 const permissions: Record<Roles, boolean> = {
-    admin: true,
-    user: false,
+  admin: true,
+  user: false,
 };
 
 // Exclude
 
-type Status = "pending" | "success" | "error";
+type Status = 'pending' | 'success' | 'error';
 
-type FinalStatus = Exclude<Status, "pending">;
+type FinalStatus = Exclude<Status, 'pending'>;
 
 // ReturnType
 
 function getUser() {
-    return {
-        id: 1,
-        name: "Alice",
-    };
+  return {
+    id: 1,
+    name: 'Alice',
+  };
 }
 
 type UserType = ReturnType<typeof getUser>;
@@ -78,9 +78,9 @@ type UserType = ReturnType<typeof getUser>;
 // Awaited
 
 async function fetchData() {
-    return {
-        title: "TypeScript",
-    };
+  return {
+    title: 'TypeScript',
+  };
 }
 
 type FetchResult = Awaited<ReturnType<typeof fetchData>>;
